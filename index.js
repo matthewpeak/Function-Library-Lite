@@ -55,11 +55,11 @@ function myFind(arr, callback){
  function sum(elem,aggV){
      return elem+aggV
  }
- 
+
   function myReduce(arr, callback,aggV=0){
     
     for(let i = 0; i < arr.length; i++){
       const element = arr[i]
-      aggV += callback(element,aggV)
+      aggV = callback(element,aggV)
     }
   }
